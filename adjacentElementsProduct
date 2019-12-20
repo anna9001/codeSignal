@@ -1,0 +1,14 @@
+int adjacentElementsProduct(int[] inputArray) {
+    
+    int max = Integer.MIN_VALUE;
+    
+    for(int i=0;i<inputArray.length - 1;i++){
+        
+            int num = inputArray[i] * inputArray[i + 1];
+            if(max < num) {
+                max = num;
+            }
+    }//for i
+    
+    return max;
+}
