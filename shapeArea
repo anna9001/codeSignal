@@ -1,0 +1,12 @@
+int shapeArea(int n) {
+
+    int k=0; //누적값
+    int ans=1;
+    
+    for(int i=1;i<n;i++){
+    
+        k +=4;
+        ans +=k;
+    }
+   return ans; 
+}
